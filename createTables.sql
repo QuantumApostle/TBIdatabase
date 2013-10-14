@@ -24,29 +24,29 @@ CREATE TABLE TBI.BalanceBeam(
     AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
     TestDate DATE,
     TrialNum INT,
-    Duration INT,
+    Duration FLOAT,
 
     FLSlips INT,
     FRSlips INT,
     BLSlips INT,
     BRSlips INT,
-    TotalSlips INT,
-
+    
     FFalls INT,
     BFalls INT,
     FullBodyFalls INT,
-    TotalFalls INT,
-
+    
     PRIMARY KEY (AID, TestDate, TrialNum)
 );
 
 CREATE TABLE TBI.TMaze(
     AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
     TestDate DATE,
-    AMorPM CHAR(2),
-    CorrectRate FLOAT,
+    TrialNum INT,
+    
     AlterRate FLOAT,
-    PRIMARY KEY (AID, TestDate, AMorPM)
+    CorrectRate FLOAT,
+
+    PRIMARY KEY (AID, TestDate, TrialNum)
 );
 
 CREATE TABLE TBI.SH(
@@ -54,12 +54,9 @@ CREATE TABLE TBI.SH(
     TestDate DATE,
     TrialNum INT,
     Duration FLOAT,
-    WM FLOAT,
-    RM FLOAT,
     BaitedRevisits INT,
     BaitedVisits INT,
     UnbaitedVisits INT,
-    TotalVisits INT,
     PRIMARY KEY (AID, TestDate, TrialNum)
 );
 
