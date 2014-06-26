@@ -1,0 +1,80 @@
+131016  1:42:21	    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'GNG'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`GNG`
+		    8 Query	SELECT * FROM TBI.GNG
+		    8 Query	SHOW KEYS FROM `TBI`.`GNG`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'GNG'
+		    8 Query	SELECT * FROM `tbi`.`gng` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`gng` LIKE 'AID'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'GNG'
+		    8 Query	SELECT * FROM `tbi`.`gng` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`gng` LIKE 'TestDate'
+131016  1:42:22	    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'BalanceBeam'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`BalanceBeam`
+		    8 Query	SELECT * FROM TBI.BalanceBeam
+		    8 Query	SHOW KEYS FROM `TBI`.`BalanceBeam`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'BalanceBeam'
+		    8 Query	SELECT * FROM `tbi`.`balancebeam` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`balancebeam` LIKE 'AID'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'BalanceBeam'
+		    8 Query	SELECT * FROM `tbi`.`balancebeam` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`balancebeam` LIKE 'TestDate'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'BalanceBeam'
+		    8 Query	SELECT * FROM `tbi`.`balancebeam` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`balancebeam` LIKE 'TrialNum'
+		    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'BasicInfo'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`BasicInfo`
+		    8 Query	SELECT * FROM TBI.BasicInfo
+		    8 Query	SHOW KEYS FROM `TBI`.`BasicInfo`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'BasicInfo'
+		    8 Query	SELECT * FROM `tbi`.`basicinfo` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`basicinfo` LIKE 'AID'
+		    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'SHB'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`SHB`
+		    8 Query	SELECT * FROM TBI.SHB
+		    8 Query	SHOW KEYS FROM `TBI`.`SHB`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'SHB'
+		    8 Query	SELECT * FROM `tbi`.`shb` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`shb` LIKE 'AID'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'SHB'
+		    8 Query	SELECT * FROM `tbi`.`shb` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`shb` LIKE 'TestDate'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'SHB'
+		    8 Query	SELECT * FROM `tbi`.`shb` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`shb` LIKE 'TrialNum'
+		    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'TMaze'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`TMaze`
+		    8 Query	SELECT * FROM TBI.TMaze
+		    8 Query	SHOW KEYS FROM `TBI`.`TMaze`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'TMaze'
+		    8 Query	SELECT * FROM `tbi`.`tmaze` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`tmaze` LIKE 'AID'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'TMaze'
+		    8 Query	SELECT * FROM `tbi`.`tmaze` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`tmaze` LIKE 'TestDate'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'TMaze'
+		    8 Query	SELECT * FROM `tbi`.`tmaze` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`tmaze` LIKE 'TrialNum'
+		    7 Query	SHOW FULL TABLES FROM `TBI` LIKE 'Weight'
+		    7 Query	SHOW FULL COLUMNS FROM `TBI`.`Weight`
+		    8 Query	SELECT * FROM TBI.Weight
+		    8 Query	SHOW KEYS FROM `TBI`.`Weight`
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'Weight'
+		    8 Query	SELECT * FROM `tbi`.`weight` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`weight` LIKE 'AID'
+		    8 Query	SHOW DATABASES LIKE 'TBI'
+		    8 Query	SHOW TABLES FROM `tbi` LIKE 'Weight'
+		    8 Query	SELECT * FROM `tbi`.`weight` WHERE 0=1
+		    8 Query	SHOW FULL COLUMNS FROM `tbi`.`weight` LIKE 'WeightDate'

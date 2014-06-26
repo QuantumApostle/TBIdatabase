@@ -1,0 +1,14 @@
+131030  2:09:01	    2 Query	help 'select'
+131030  2:09:02	    2 Query	SHOW FULL COLUMNS FROM `tbi`.`tmaze`
+		    1 Query	select AlterRate from TBI.TMaze where TrialNum = 4 and AID = 6204 and TestDate = '2013-07-28'
+131030  2:09:03	    2 Query	SHOW FULL COLUMNS FROM `tbi`.`shb`
+		    1 Query	select TestDate, AID from TBI.SHB where Duration < 25 and UnbaitedVisits < 5
+		    2 Query	SHOW FULL COLUMNS FROM `tbi`.`balancebeam`
+		    1 Query	select AID, TestDate from TBI.BalanceBeam where AID = 6204 and FullBodyFalls < 5 and Duration < 40
+131030  2:09:04	    1 Query	select TBI.GNG.AID, TBI.GNG.TestDate, TBI.GNG.Correctness from TBI.GNG, TBI.BasicInfo, TBI.Weight where Impulse < TBI.GNG.TestDate and Impulse < WeightDate and Weight < 17
+		    1 Query	select distinct(TBI.TMaze.AID), TBI.TMaze.TestDate, TBI.TMaze.TrialNum from TBI.TMaze, TBI.GNG, TBI.SHB where AlterRate > 0.9 and TBI.GNG.CorrectNess > 0.9 and TBI.GNG.TestDate > TBI.SHB.TestDate and TBI.SHB.Duration < 25
+131030  2:09:05	    1 Query	select distinct(TBI.SHB.TestDate) from TBI.SHB union all select TBI.GNG.TestDate from TBI.GNG
+		    1 Query	select AID, avg(weight) as AverageWeight from TBI.Weight group by AID
+		    1 Query	select TestDate from TBI.SHB where AID = 6204 and BaitedRevisits < 5 order by Duration, UnbaitedVisits desc
+131030  2:09:06	    1 Query	select distinct(TBI.GNG.TestDate) from TBI.GNG, TBI.BasicInfo where TBI.GNG.AID = 6185 and Impulse < TestDate
+		    1 Query	select max(Correctness), TestDate from TBI.GNG where AID = 6204

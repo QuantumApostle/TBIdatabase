@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\title{CSCE608 Project Schema}
+\author{Yixin Geng}
+\date{}
+\usepackage{graphicx}
+\begin{document}
+	\maketitle
+	Animal Basic Information(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Date of Birth:date,\\
+	\indent\indent Date of Impulse:date)\\
+	
+	\indent Animal Weight(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent Weight:float)\\
+		
+	\indent Go/No Go Test(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent Correctness:float)\\
+	
+	\indent Balance Beam Test(Falls)(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent \underline{Trial Number}:integer,\\
+	\indent\indent Duration:float,\\
+	\indent\indent Total Falls:integer,\\
+	\indent\indent Front:integer,\\
+	\indent\indent Back:integer,\\
+	\indent\indent Full Body:integer)\\
+	
+	\newpage
+	
+	\indent Balance Beam Test(Slips)(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent \underline{Trial Number}:integer,\\
+	\indent\indent Duration:float,\\
+	\indent\indent Front Left:integer,\\
+	\indent\indent Front Right:integer,\\
+	\indent\indent Back Left:integer,\\
+	\indent\indent Back Right:integer,\\
+	\indent\indent Total Slips:integer)\\
+	
+	\indent Go/No Go Selection(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Mean:float,\\
+	\indent\indent Mean Rank:integer,\\
+	\indent\indent Standard Deviation:float,\\
+	\indent\indent Standard Deviation Rank:integer)\\
+	
+	\indent Selection Total Rank(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Rank Value:integer,\\
+	\indent\indent Total Rank:integer)\\
+	
+	\indent T-maze Selection(without correction)(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Mean:float,\\
+	\indent\indent Mean Rank:integer,\\
+	\indent\indent Standard Deviation:float,\\
+	\indent\indent Standard Deviation Rank:integer)\\
+	
+	\indent T-maze Selection(with correction)(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Mean:float,\\
+	\indent\indent Mean Rank:integer,\\
+	\indent\indent Standard Deviation:float,\\
+	\indent\indent Standard Deviation Rank:integer)\\
+	
+	\newpage	
+	
+	\indent T-maze Test(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent \underline{AM/PM}:char(2),\\
+	\indent\indent Percentage of Correctness:float,\\
+	\indent\indent Percentage of Alternation:float)\\
+	
+	\indent Spacial Holeboard Test(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent \underline{Date}:date,\\
+	\indent\indent \underline{Trial Number}:integer,\\
+	\indent\indent Duration:float,\\
+	\indent\indent Working Memory:float,\\
+	\indent\indent Reference Memory:float,\\
+	\indent\indent Revisits to Baited:integer,\\
+	\indent\indent Visits to Baited:integer,\\
+	\indent\indent Unbaited Visits:integer,\\
+	\indent\indent Total Visits:integer)\\
+	
+	\indent Spacial Holeboard Selection(\\
+	\indent\indent \underline{Animal ID}:integer,\\
+	\indent\indent Working Memory:float,\\
+	\indent\indent Working Memory Rank:integer,\\
+	\indent\indent Reference Memory:float,\\
+	\indent\indent Reference Memory Rank:integer)
+	
+	
+\end{document}

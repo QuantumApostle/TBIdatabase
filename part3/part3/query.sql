@@ -1,0 +1,10 @@
+select AlterRate from TBI.TMaze where TrialNum = 4 and AID = 6204 and TestDate = '2013-07-28';
+select TestDate, AID from TBI.SHB where Duration < 25 and UnbaitedVisits < 5;
+select AID, TestDate from TBI.BalanceBeam where AID = 6204 and FullBodyFalls < 5 and Duration < 40;
+select TBI.GNG.AID, TBI.GNG.TestDate, TBI.GNG.Correctness from TBI.GNG, TBI.BasicInfo, TBI.Weight where Impulse < TBI.GNG.TestDate and Impulse < WeightDate and Weight < 17 ;
+select distinct(TBI.TMaze.AID), TBI.TMaze.TestDate, TBI.TMaze.TrialNum from TBI.TMaze, TBI.GNG, TBI.SHB where AlterRate > 0.9 and TBI.GNG.CorrectNess > 0.9 and TBI.GNG.TestDate > TBI.SHB.TestDate and TBI.SHB.Duration < 25;
+select distinct(TBI.SHB.TestDate) from TBI.SHB union all select TBI.GNG.TestDate from TBI.GNG;
+select AID, avg(weight) as AverageWeight from TBI.Weight group by AID;
+select TestDate from TBI.SHB where AID = 6204 and BaitedRevisits < 5 order by Duration, UnbaitedVisits desc;
+select distinct(TBI.GNG.TestDate) from TBI.GNG, TBI.BasicInfo where TBI.GNG.AID = 6185 and Impulse < TestDate;
+select max(Correctness), TestDate from TBI.GNG where AID = 6204; 

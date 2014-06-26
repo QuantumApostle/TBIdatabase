@@ -1,0 +1,18 @@
+\documentclass[11pt]{article}
+\title{CSCE608:Project Part 4 Explanation}
+\author{Yixin Geng}
+\date{}
+
+\begin{document}
+	\maketitle
+	\section{Introduction}
+		In this part of project, the MySql database management system is implemented in two parts written in Java using JDBC library. One is the main class which is the system's entry. The user will choose the function to implement here. The other part is the MySqlAccess class including all the back end implementation of each function such as inserting, updating, deleting and so on. The database connection function is embedded in each function which will be established automatically.\\
+		
+	\section{Functions Explanation}
+		\paragraph{Insert} The inserting function is implemented in a flexible way which user can choose table to insert from tables: BasicInfo, GNG and Weight. And sql query will be generated accordingly.
+		
+		\paragraph{Update} The update function is also implemented in a flexible way which user can choose table to update. And also after choosing the table, user can also choose the current available animal IDs and dates in the database. The sql query will also be generated accordingly.
+		
+		\paragraph{Select} The functions 3 and 4 are select functions which most part of query is embedded in the system. However there is still some flexibility which in function 4 user can choose animal ID to see the maximal correctness and date in GNG table.
+		\paragraph{Delete} The function 5 is deleting the record with too long duration in Balance Beam experiment. User here can determine the time limit of too long duration. 
+\end{document}

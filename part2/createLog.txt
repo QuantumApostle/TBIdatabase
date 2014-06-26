@@ -1,0 +1,121 @@
+C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqld, Version: 5.5.34-log (MySQL Community Server (GPL)). started with:
+TCP Port: 3306, Named Pipe: (null)
+Time                 Id Command    Argument
+131014 13:09:49	    1 Connect	root@localhost on homs
+		    1 Query	SHOW SESSION VARIABLES
+		    1 Query	SHOW COLLATION
+		    1 Query	SET character_set_results = NULL
+		    1 Query	SET autocommit=1
+131016  1:39:04	    8 Query	CREATE DATABASE TBI
+		    8 Query	CREATE TABLE TBI.BasicInfo(
+    AID INT, 
+    DOB DATE,
+    Impulse DATE,
+    PRIMARY KEY (AID)
+)
+		    8 Query	CREATE TABLE TBI.Weight(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    WeightDate DATE,
+    Weight FLOAT,
+    PRIMARY KEY (AID, WeightDate)    
+)
+		    8 Query	CREATE TABLE TBI.GNG(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    Correctness FLOAT,
+    PRIMARY KEY (AID, TestDate)
+)
+		    8 Query	CREATE TABLE TBI.BalanceBeam(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    Duration FLOAT,
+
+    FLSlips INT,
+    FRSlips INT,
+    BLSlips INT,
+    BRSlips INT,
+    
+    FFalls INT,
+    BFalls INT,
+    FullBodyFalls INT,
+    
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
+131016  1:39:05	    8 Query	CREATE TABLE TBI.TMaze(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    
+    AlterRate FLOAT,
+    CorrectRate FLOAT,
+
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
+		    8 Query	CREATE TABLE TBI.SHB(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    Duration FLOAT,
+    BaitedRevisits INT,
+    BaitedVisits INT,
+    UnbaitedVisits INT,
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
+131016  1:39:40	    8 Query	drop database tbi
+131016  1:40:00	    8 Query	CREATE DATABASE TBI
+		    8 Query	CREATE TABLE TBI.BasicInfo(
+    AID INT, 
+    DOB DATE,
+    Impulse DATE,
+    PRIMARY KEY (AID)
+)
+		    8 Query	CREATE TABLE TBI.Weight(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    WeightDate DATE,
+    Weight FLOAT,
+    PRIMARY KEY (AID, WeightDate)    
+)
+		    8 Query	CREATE TABLE TBI.GNG(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    Correctness FLOAT,
+    PRIMARY KEY (AID, TestDate)
+)
+		    8 Query	CREATE TABLE TBI.BalanceBeam(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    Duration FLOAT,
+
+    FLSlips INT,
+    FRSlips INT,
+    BLSlips INT,
+    BRSlips INT,
+    
+    FFalls INT,
+    BFalls INT,
+    FullBodyFalls INT,
+    
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
+		    8 Query	CREATE TABLE TBI.TMaze(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    
+    AlterRate FLOAT,
+    CorrectRate FLOAT,
+
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
+		    8 Query	CREATE TABLE TBI.SHB(
+    AID INT REFERENCES TBI.BasicInfo(AID) ON DELETE CASCADE,
+    TestDate DATE,
+    TrialNum INT,
+    Duration FLOAT,
+    BaitedRevisits INT,
+    BaitedVisits INT,
+    UnbaitedVisits INT,
+    PRIMARY KEY (AID, TestDate, TrialNum)
+)
